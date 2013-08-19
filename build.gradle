@@ -81,11 +81,11 @@ uploadArchives {
 		mavenDeployer {
 			if (version.endsWith('-SNAPSHOT')) {
 				repository(url: 'http://scm.softwareinlife.com/nexus/content/repositories/snapshots/') {
-					authentication(userName: 'deployment', password: 'wearethe1')
+					authentication(userName: 'name', password: 'pass')
 				}
 			} else {
 				repository(url: 'http://scm.softwareinlife.com/nexus/content/repositories/releases/') {
-					authentication(userName: 'deployment', password: 'wearethe1')
+					authentication(userName: 'name', password: 'pass')
 				}
 			}
 			
